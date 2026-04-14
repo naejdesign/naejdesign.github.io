@@ -181,44 +181,92 @@ border-color:#cccccc;
 
 .about_us {
   padding: 50px 0;
-  background:none repeat scroll 0 0 #F1F1F1;
-  border-bottom:1px solid #D1D1D1 !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+  background: none repeat scroll 0 0 #F1F1F1;
+  border-bottom: 1px solid #D1D1D1 !important;
   *zoom: 1;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.about_us h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  font-size: 2.4rem !important;
+  color: #2c2c2c;
+}
+
+.about_us p.lead {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: 2.2 rem !important;
+  line-height: 2;
+  color: #3a3a3a;
+  font-style: italic;
 }
 
 /* Services */
 
 .services {
-   background: none repeat scroll 0 0 #4D4D4D;
+  background: #faf6f1;
   padding: 50px 0;
-  color: #eeeeee;
+  color: #3a3a3a;
   width: 100%;
-  border-bottom:1px solid #D1D1D1 !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-  *zoom: 1;
+  border-bottom: 1px solid #e0d0bf !important;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+.services h2 {
+  color: #3a3a3a;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  font-size: 2.4rem !important;
+  text-transform: uppercase;
 }
 
 .service-item {
-  margin-bottom: 15px;
-  background:#333333;
-  padding:10px;
-  border:1px solid #D1D1D1 !important;
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
-  *zoom: 1;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
-          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  margin-bottom: 20px;
+  background: linear-gradient(145deg, #fdf9f5, #f5ede3);
+  padding: 30px 20px;
+  border: 1px solid #e8d8c8 !important;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-box-shadow: 0 2px 12px rgba(180, 140, 100, 0.08);
+     -moz-box-shadow: 0 2px 12px rgba(180, 140, 100, 0.08);
+          box-shadow: 0 2px 12px rgba(180, 140, 100, 0.08);
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(180, 140, 100, 0.18);
+}
+
+.service-item .service-icon {
+  color: #b07d54;
+}
+
+.service-item h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 2300;
+  letter-spacing: 0.12em;
+  font-size: 1.7rem;
+  color: #6b4c32;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.service-item p {
+  color: hsl(30, 36%, 53%);
+  font-size: 1.3rem;
 }
 
 .active {
-background:#3071A9 !important;
+background:#a9886e !important;
 border:1px solid #BBBBBB !important;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
   *zoom: 1;
@@ -227,7 +275,26 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', en
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
 }
 .label {
-border-radius:0px !important;
+  border-radius: 20px !important;
+}
+
+.filter.label.label-default {
+  background-color: #e8d5c0;
+  color: #6b4c32;
+  padding: 6px 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 1.5rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px;
+}
+
+.filter.label.label-default:hover {
+  background-color: #b07d54;
+  color: #fff;
 }
 label.valid {
 		  width: 24px;
@@ -242,8 +309,22 @@ label.valid {
 			padding: 2px 8px;
 			margin-top: 2px;
 		}
+
+.portfolio h2 {
+  color: #3a3a3a;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.35em;
+  font-size: 2.4rem !important;
+  text-transform: uppercase;
+}
+
 .portfolio {
 background:#f1f1f1;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 400;
+letter-spacing: 0.12em;
+font-size: 1.5rem;
 }		
 /* gallery */
 .gallery {
@@ -353,6 +434,11 @@ span.valign {
 #contact {
 background:none repeat scroll 0 0 rgba(0, 0, 0, 0.79);
 color:#f1f1f1;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: 400;
+letter-spacing: 0.25em;
+font-size: 2.4rem !important;
+text-transform: uppercase;
 padding:50px 0;
 border-top:1px solid #D1D1D1 !important;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
